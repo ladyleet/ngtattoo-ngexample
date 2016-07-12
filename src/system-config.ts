@@ -35,6 +35,7 @@ const barrels: string[] = [
   'app/shared',
   'app/tattoo-card',
   'app/about-page',
+  'app/angular-logo',
   /** @cli-barrel */
 ];
 
