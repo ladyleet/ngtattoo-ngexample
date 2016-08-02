@@ -1,3 +1,26 @@
-<p>
-  about-page works!
-</p>
+<div>
+  <h2 class="red-text">About Page</h2>
+  <p>Welcome to ng-tattoo! Hope you enjoy all the tattooed faces on this page. If you'd like to get tattooed too, tweet me <a href="http://twitter.com/ladyleet">@ladyleet</a> and we'll get you set up. :D</p>
+</div>
+<div>
+  <div class="row">
+    <form #tattooForm="ngForm" (ngSubmit) = "submitTattoo(tattooForm)" class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input [(ngModel)] = "person.firstName" id="first_name" #first="ngModel" name="first_name" type="text" class="validate" required>
+          <label for="first_name">First Name</label>
+          <span *ngIf="first.touched && first.errors">Please enter your first name</span>
+        </div>
+        <div [ngClass]="{'haserror':last.touched && last.errors}" class="input-field col s6">
+          <input [(ngModel)] = "person.lastName" id="last_name" #last="ngModel" name="last_name" type="text" class="validate" required>
+          <label for="last_name">Last Name</label>
+          <span *ngIf="last.touched && last.errors">Oopsies! last name please!</span>
+        </div>
+        <div class="col s6">
+          <button class="btn waves-effect waves-light red" type="submit" name="action">Submit
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
