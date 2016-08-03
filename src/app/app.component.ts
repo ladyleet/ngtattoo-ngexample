@@ -12,6 +12,7 @@ import { Component } from '@angular/core';
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="#">temp</a></li>
           <li><a href="#">temp</a></li>
+          <li><a href="#">temp</a></li>
         </ul>
       </div>
     </nav>
