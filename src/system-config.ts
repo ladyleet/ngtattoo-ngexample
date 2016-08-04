@@ -26,6 +26,7 @@ const barrels: string[] = [
   '@angular/router',
   '@angular/platform-browser',
   '@angular/platform-browser-dynamic',
+  '@angular/forms',
 
   // Thirdparty barrels.
   'rxjs',
@@ -36,6 +37,7 @@ const barrels: string[] = [
   'app/tattoo-card',
   'app/about-page',
   'app/get-tattooed',
+  'app/get-tattooed/submissions',
   /** @cli-barrel */
 ];
 
